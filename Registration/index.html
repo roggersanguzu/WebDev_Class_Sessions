@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Information Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#form">Apply</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="landing">
+      <img
+        src="https://drive.google.com/uc?export=view&id=1cwb0LppsF0DGC3omkrIBuXizmbxEbGgi"
+        alt="School Image"
+      />
+      <h1>Welcome to Our School</h1>
+      <p>Join us for an amazing educational experience.</p>
+    </section>
+    <section id="form">
+      <h2>Student Information Form</h2>
+      <form>
+        <fieldset>
+          <legend>Student Information</legend>
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" /><br />
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" /><br />
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label for="contact">Contact:</label>
+          <input type="text" id="contact" name="contact" /><br />
+          <label for="emergencyContact">Emergency Contact:</label>
+          <input type="text" id="emergencyContact" name="emergencyContact" />
+        </fieldset>
+        <fieldset>
+          <legend>Parent/Guardian Information</legend>
+          <label for="parentName">Parent/Guardian Name:</label>
+          <input type="text" id="parentName" name="parentName" /><br />
+          <label for="parentContact">Parent/Guardian Contact:</label>
+          <input type="text" id="parentContact" name="parentContact" />
+        </fieldset>
+        <fieldset>
+          <legend>Educational History</legend>
+          <label for="prevSchool">Previous School:</label>
+          <input type="text" id="prevSchool" name="prevSchool" />
+        </fieldset>
+        <fieldset>
+          <legend>Health and Demographic Information</legend>
+          <label for="medicalInfo">Medical Information:</label>
+          <input type="text" id="medicalInfo" name="medicalInfo" /><br />
+          <label for="language">Language Spoken at Home:</label>
+          <input type="text" id="language" name="language" /><br />
+          <label for="nationality">Nationality/Race:</label>
+          <input type="text" id="nationality" name="nationality" />
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
