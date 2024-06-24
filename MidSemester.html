@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym Registration</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: rgb(147, 95, 196);
+        padding-top: 3%;
+        padding-bottom: 3%;
+        color: white;
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      nav ul {
+        list-style-type: none;
+        color: yellowgreen;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+        padding-left: 3%;
+        color: yellowgreen;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+      }
+
+      .welcome {
+        text-align: center;
+        background-color: #4271ad;
+        padding-bottom: 5%;
+        padding-top: 5%;
+      }
+
+      .welcome img {
+        max-width: 100%;
+        height: 20rem;
+      }
+
+      #data {
+        padding: 20px;
+        background-image: url("https://cdn.pixabay.com/photo/2014/04/03/10/43/weight-lifting-311241_1280.png");
+        background-position: center;
+        background-size: cover;
+        background-color: blueviolet;
+        font-size: 20px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      #data img {
+        height: 8%;
+        width: 20%;
+      }
+
+      form {
+        max-width: 650px;
+        margin: 0 auto;
+      }
+
+      div {
+        border: 3px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        box-shadow: 1.5px 1.2px 1.2px 1.2px skyblue;
+        cursor: pointer;
+      }
+
+      h1 {
+        font-weight: bold;
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+      }
+
+      label {
+        display: block;
+        margin-top: 20px;
+      }
+
+      input,
+      select {
+        width: 90%;
+        padding: 8px;
+        margin-top: 4px;
+      }
+      .waiver {
+        display: block;
+        position: relative;
+      }
+
+      .waiver input {
+        position: absolute;
+      }
+      button {
+        background-color: greenyellow;
+        color: black;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-right: 4%;
+        padding-left: 4%;
+        font-weight: 100px;
+        margin-left: 50%;
+        margin-right: 50%;
+      }
+
+      @media (max-width: 600px) {
+        nav ul li {
+          display: block;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+
+        form {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#data">Membership Application</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="welcome">
+      <img
+        src="https://cdn.pixabay.com/photo/2014/04/02/17/03/gym-307770_1280.png"
+        alt="Gym Image"
+      />
+      <h1>QWETU FITNESS CLUB</h1>
+      <p>"Your Well being is all that we need"</p>
+    </section>
+    <section id="data">
+      <h2>Applicant Information</h2>
+      <form>
+        <div>
+          <h1>Personal Information</h1>
+          <label for="fName">First Name</label>
+          <input type="text" id="fName" name="fName" /><br />
+
+          <label for="lName">Last Name:</label>
+          <input type="text" id="lName" name="lName" /><br />
+
+          <label>Birth Date</label>
+          <input type="date" /><br />
+
+          <label>Telephone Contact</label>
+          <input type="Telephone" /><br />
+
+          <label>Email Address</label>
+          <input type="email" /><br />
+
+          <label>Physical Address</label>
+          <input type="address" /><br />
+        </div>
+
+        <div>
+          <h1>Health and Fitness Details</h1>
+          <label for="current">Current Fitness Level</label>
+          <select name="details">
+            <option value="beg">Beginnner</option>
+            <option value="Int">Intermediate</option>
+            <option value="adv">Advanced</option>
+          </select>
+
+          <label for="current">Primary Fitness Goal</label>
+          <select name="details">
+            <option value="wLoss">Weight Loss</option>
+            <option value="musle">Muscle Gain</option>
+            <option value="gen">General Fitness</option>
+            <option value="other">other</option>
+          </select>
+          <label for="emeregncy">Emergency Contact Name</label>
+          <input type="text" name="emeregncy" />
+
+          <label for="emeregncy">Emergency Contact Number</label>
+          <input type="telephone" name="emenumber" />
+        </div>
+
+        <div>
+          <h1>Membership Options</h1>
+          <label for="membership">Membership Type</label>
+          <select name="details">
+            <option value="month">Monthly</option>
+            <option value="qaurt">Qarterly</option>
+            <option value="year">Yearly</option>
+          </select>
+
+          <label for="membershipTymz">Preferred Workout Times</label>
+          <select name="details">
+            <option value="mon">Morning</option>
+            <option value="qaurt">Afternoon</option>
+            <option value="year">Evening</option>
+          </select>
+
+          <label for="">Are you Interested in Personal Training?</label>
+          <select name="Times">
+            <option value="yes">YES</option>
+            <option value="no">NO</option>
+          </select>
+        </div>
+
+        <div>
+          <h1>Payment Information</h1>
+          <label for="name">Card Holder Name</label>
+          <input type="text" />
+
+          <label for="number">Card Number</label>
+          <input type="number" />
+
+          <label for="date">Expiry Date</label>
+          <input type="date" />
+        </div>
+
+        <div class="waiver">
+          <h1>Agreement and Waivers</h1>
+          <label for="">
+            <input type="checkbox" />Terms and Conditions
+
+            <input type="checkbox" />Liability Waiver
+
+            <input type="checkbox" />Marketting Permissions
+          </label>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
